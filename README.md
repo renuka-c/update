@@ -10,6 +10,7 @@ public class MongoDb {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
           MongoClient mongoClient = new MongoClient("localhost", 27017);
+	  Mongoclient mongoClient = new MongoClient("localhost", 27018);
           System.out.println("Successfully connted to MongoDB");
           
           MongoDatabase sl = mongoClient.getDatabase("Instagram");
